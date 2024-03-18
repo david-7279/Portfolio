@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700');
+
+:root{
+    --color-primary: #6C9BCF;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-background: #f6f6f9;
+    --color-line: #848bc82e;
+    --color-black: #000000;
+
+    --card-border-radius: 8px;
+
+    --box-shadow: 0 0.5rem 1rem var(--color-light);
+    --box-shadow-hover: 0 0rem 1.5rem var(--color-light);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0px;
+    background-color: var(--color-background);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin-top: 200px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    max-width: 400px;
+    width: 100%;
+    min-width: 200px;
+    height: 270px;
+    margin: 13px;
+
+    border: 1px;
+    border-radius: var(--card-border-radius);
+
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+/*--------------------------------------
+    Icon 
+--------------------------------------*/
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+
+    border-radius: 100%;
+
+    background-color: var(--color-dark);
+    color: var(--color-white);
+
+    transition: all 0.7s ease;
+}
+
+.fas{
+    font-size: 22px;
+}
+/*--------------------------------------
+    End Icon 
+--------------------------------------*/
+
+
+/*--------------------------------------
+    Title and text 
+--------------------------------------*/
+.card .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-black);
+
+    transition: all 1s ease;
+}
+
+.card .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-height: 0;
+
+    opacity: 0;
+
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-black);
+
+    transition: all 0.5s ease-in;
+}
+/*--------------------------------------
+    End Title and text 
+--------------------------------------*/
+
+
+/*--------------------------------------
+    Hover 
+--------------------------------------*/
+.card:hover{
+    height: 300px;
+    box-shadow: var(--box-shadow-hover);
+}
+.card:hover .text{
+    opacity: 1;
+}
+
+.card:hover .title{
+    letter-spacing: 2px;
+}
+
+.card:hover .icon{
+    background-color: var(--color-primary);
+}
+
+/*--------------------------------------
+    End Hover 
+--------------------------------------*/
+
+
+/*--------------------------------------
+    Responsive 
+--------------------------------------*/
+@media screen and (max-width:768) {
+    .content {
+		padding-top: 300px;
+		flex-direction: column;
+   }
+}
+/*--------------------------------------
+    End Responsive 
+--------------------------------------*/

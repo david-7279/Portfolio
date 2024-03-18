@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Variables */
+:root{
+    --color-primary: #6C9BCF;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow-hover: 0 1rem 1.5rem var(--color-light);
+}
+/* End Of Variables */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+}
+
+body{
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+    padding: 200px 0 20px;
+    margin-bottom: 2rem;
+}
+
+/* Title Forms Login and Create */
+.title-create,
+.title-login {
+    position: absolute;
+}
+
+.title-create {
+    margin-left: 8.5rem ;
+}
+
+.title-login {
+    margin-left: 13.6rem;
+}
+/* End Of Title Forms Login and Create */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    height: 50vh;
+    background: var(--color-background);
+    margin: 0 auto;
+    border: 2px solid var(--color-background);
+    transition: all 0.3s ease;
+}
+
+/* Form Login */
+.container .left {
+    float: left;
+    width: 50%;
+    height: 50vh;
+    background: var(--color-background);
+    box-shadow: var(--box-shadow);
+    box-sizing: border-box;
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+}
+
+/* Form Create */
+.container .right {
+    float: right;
+    width: 50%;
+    height: 50vh;
+    background: var(--color-background);
+    box-shadow: var(--box-shadow);
+    box-sizing: border-box;
+    margin-left: 2rem;
+    transition: all 0.3s ease;
+}
+
+.container .right:hover,
+.container .left:hover {
+    box-shadow: var(--box-shadow-hover);
+}
+
+.form-box{
+    width: 90%;
+    height: 50vh;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: var(--color-background);
+}
+
+/* Forms Inputs */
+.form-box input {
+    width: 100% ;
+    margin-bottom: 25px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+    border: 1px solid var(--color-info-dark);
+    border-radius: var(--card-border-radius);
+    height: 2.5rem;
+    width: 100%;
+    padding: 10px;
+}
+ 
+.form-box input[type="submit"] {
+    width: 50%;
+    border: none;
+    outline: none;
+    height: 3.7vh;
+    color: var(--color-white);
+    background: var(--color-dark);
+    border-radius: var(--card-border-radius);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.form-box input[type="submit"]:hover {
+   background: var(--color-primary);
+}
+.form-box .checkbox {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Alinhe à esquerda */
+    align-items: center;
+}
+
+.form-box input[type="checkbox"] {
+    margin-top: 1.2rem;
+    width: 2rem;
+    height: 1.5vh;
+    color: var(--color-white);
+    background: var(--color-dark);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.form-box a{
+    color: var(--color-dark);
+    border: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+ }
+
+ .form-box a:hover{
+    color: var(--color-primary);
+ }
+
+.form-box label u {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+/* End Of Forms */
+
+/* Responsive */ 
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .left,
+    .container .right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-box {
+        width: 100%;
+        margin: 0 0 2rem;
+    }
+
+    .form-box .forgot-password {
+        text-align: center;
+    }
+
+    .container .right {
+        order: 1;
+        margin-top: 2.5rem;
+    }
+
+    .title-login, .title-create {
+        text-align: center;
+        margin: auto;
+    }
+
+    .title-create {
+        margin-left: 9rem;
+    }
+    
+    .title-login {
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .left,
+    .container .right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-box {
+        width: 100%;
+        margin: 0 0 2rem;
+    }
+
+    .form-box .forgot-password {
+        text-align: center;
+    }
+
+    .container .right {
+        order: 1;
+        margin-top: 2.5rem;
+    }
+
+    .title-login, .title-create {
+        text-align: center;
+        margin: auto;
+    }
+
+    .title-create {
+        right: 37%;
+    }
+    
+    .title-login {
+        left: 45%;
+    }
+}

@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*---------------------------------------------------------
+	Variables
+----------------------------------------------------------*/
+:root{
+    --color-primary: #6C9BCF;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-background: #f6f6f9;
+    --color-line: #848bc82e;
+	--color-black:#000000;
+
+    --card-border-radius: 8px;
+
+    --box-shadow: 0 0.5rem 1rem var(--color-light);
+    --box-shadow-hover: 0 0rem 1.5rem var(--color-light);
+}
+/*---------------------------------------------------------
+	End Variables
+----------------------------------------------------------*/
+main{
+	font-family: 'Montserrat', sans-serif;
+	background-color: var(--color-background);
+}
+
+/*---------------------------------------------------------
+	Hero
+----------------------------------------------------------*/
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	max-width: 1020px;
+	width: 100%;
+
+    padding-top: 50px;
+	margin: 0 auto;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+.hero .ref-hero{
+	text-decoration: none !important;
+}
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    max-width: 1000px;
+    width: 100%;
+    min-width: 700px;
+
+    height: 450px;
+	margin: 10px;
+	
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+
+    transition: all 1s ease;
+}
+
+.hero-content{
+    flex: 1;
+    padding-inline-start: 15px;
+
+    cursor: default;
+}
+
+.hero-content .hero-title{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+
+	color: var(--color-info-dark);
+
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.hero-content .hero-text{
+    font-size: 23px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+
+	color: var(--color-black);
+
+    padding-bottom: 20px;
+
+    transition: all 0.5s ease;
+}
+
+.hero-content .view-more{
+	opacity: 0;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: var(--color-black);
+
+    transition: all 1s ease;
+}
+
+.hero-content .material-symbols-outlined{
+	opacity: 0;
+
+    font-size: 17px;
+    color: var(--color-black);
+
+    padding-inline-start: 2px;
+
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.hero-image img{
+    width: 400px;
+
+    transition: all 0.5s ease-out;
+}
+/*-------------------------
+	Hover Hero
+-------------------------*/
+.hero-container:hover{
+	height: 500px;
+    box-shadow: var(--box-shadow-hover);
+}
+
+.hero-title:hover,
+.hero-text:hover{
+    letter-spacing: 0px;
+}
+
+.hero-container:hover .view-more,
+.hero-container:hover .material-symbols-outlined{
+	opacity: 1;
+}
+
+.view-more:hover,
+.view-more:hover .material-symbols-outlined{
+    color: var(--color-primary);    
+    letter-spacing: 0px;
+}
+
+.hero-image img:hover{
+    transform: scale(0.9);
+}
+/*---------------------------------------------------------
+	End Hero
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+	Card - Camisolas | Chuteiras | Acessorios
+----------------------------------------------------------*/
+.content-card-stg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1020px;
+	width: 100%;
+	padding: 0 4%;
+	padding-top: 50px;
+	margin: 0 auto;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+.card-stg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	max-width: 400px;
+	width: 100%;
+	min-width: 200px;
+	height: 250px;
+	background-color: var(--color-white);
+	margin: 10px;
+	border-radius: 8px;
+	box-shadow: var(--box-shadow);
+	border: 2px;
+	font-size: 16px;
+	cursor: pointer;
+    transition: all 1s ease;
+}
+
+.c-img-stg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+	height: 80px;
+	max-width: 120px;
+	transition: all 2s ease;
+}
+
+.icon-stg .c-img-stg {
+	width: 100px;
+	height: 100px;
+}
+
+.card-stg .c-title-stg {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	margin-top: 30px;
+	color: var(--color-dark);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	transition: all 1s ease;
+}
+
+.card-stg .c-text-stg {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 20px;
+	color: var(--color-dark);
+	font-weight: 400;
+	letter-spacing: 1px;
+	opacity: 0;
+	max-height: 0;
+	transition: all 0.7s ease;
+}
+
+/*-------------------------
+	Hover Card
+-------------------------*/
+.card-stg:hover{
+	height: 270px;
+
+	box-shadow: var(--box-shadow-hover);
+}
+
+.card-stg:hover .c-title-stg{
+	letter-spacing: 2px;
+}
+
+ .card-stg:hover .c-text-stg {
+	opacity: 1;
+	max-height: 40px;
+
+	transition: all 0.7s ease;
+}
+ .card-stg:hover .c-img-stg {
+	width: 90px;
+	height: 90px;
+
+	transition: all 0.3s ease;
+}
+
+.card-stg a{
+	text-decoration: none;
+}
+/*---------------------------------------------------------
+	End Card - Camisolas | Chuteiras | Acessorios
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+	Products
+----------------------------------------------------------*/
+section {
+	overflow: hidden;
+	padding: 40px 0;
+	margin-top: 100px;
+	margin-bottom: 550px;
+}
+  
+.section-bg {
+	background-color: var(--color-background);
+}
+  
+.section-header {
+	text-align: center;
+	padding-top: 30px;
+}
+  
+.section-header h2 {
+	font-size: 13px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+
+	margin: 0;
+	padding: 0;
+	color: var(--color-info-dark);
+
+	cursor: default;
+	transition: all 0.5s ease;
+}
+  
+.section-header p {
+	font-size: 38px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+
+	margin: 0;
+
+	cursor: default;
+	transition: all 0.5s ease;
+}
+  
+.section-header p span {
+	color: var(--color-primary);
+}
+
+.menu .nav-tabs {
+	border: none;
+  }
+  
+.menu .nav-link {
+	margin: 0 10px;
+	padding: 15px 25px;
+	
+	color: var(--color-black);
+	border-radius: var(--card-border-radius);
+
+	transition: 0.3s;
+	cursor: pointer;
+}
+  
+.menu .nav-link i {
+	padding-right: 15px;
+	font-size: 48px;
+
+	cursor: default;
+	transition: all 0.5s ease;
+}
+
+.menu .nav-link h4 {
+	font-size: 17px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+
+	margin: 0;
+
+	cursor: default;
+	transition: all 0.5s ease;
+}
+
+.menu .nav-link:hover {
+	color: var(--color-primary);
+}
+  
+.menu .nav-link.active {
+	color: var(--color-primary);
+}
+  
+.menu .tab-content .tab-header {
+	padding: 30px 0;
+}
+  
+.menu .tab-content .tab-header h3 {
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+
+	color: var(--color-primary);
+
+	cursor: default;
+	transition: all 0.5s ease;
+}
+  
+.menu .tab-content .menu-item {
+	-moz-text-align-last: center;
+	text-align-last: center;
+}
+  
+.menu .tab-content .menu-item .menu-img {
+	padding: 0 60px;
+	margin-bottom: 15px;
+}
+
+
+.menu .tab-content .menu-item img{
+	transition: all 0.5s ease;
+}
+
+.menu .tab-content .menu-item img:hover{
+	transform: scale(0.9);
+}
+  
+.menu .tab-content .menu-item h4 {
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+
+	color: var(--color-black);
+	
+	margin-bottom: 5px;
+
+	cursor: default;
+	transition: all 0.5s ease;
+}
+  
+.menu .tab-content .menu-item .menu-sub-title {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+
+	color: var(--color-info-dark);
+	
+	margin-bottom: 5px;
+
+	cursor: default;
+	transition: all 0.5s ease;
+}
+  
+.menu .tab-content .menu-item .price {
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+
+	color: var(--color-primary);
+
+	cursor: default;
+	transition: all 0.5s ease;
+}
+
+.menu .tab-content .menu-item h4:hover,
+.menu .tab-content .menu-item .menu-sub-title:hover,
+.menu .tab-content .menu-item .price:hover,
+.menu .tab-content .tab-header h3:hover,
+.section-header h2:hover,
+.section-header p:hover,
+.menu .nav-link i:hover{
+	letter-spacing: 0.5px;
+}
+
+@media (max-width: 575px) {
+	.menu .nav-link {
+	  margin: 0 10px;
+	  padding: 10px 0;
+	}
+}
+@media (max-width: 575px) {
+	.menu .nav-link h4 {
+	  font-size: 16px;
+	}
+}
+/*---------------------------------------------------------
+	End Products
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+	Acessorios
+----------------------------------------------------------*/
+
+.banner{
+	position: relative;
+	left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:2000px; /*width: 980px*/
+    height:960px; /* height: 1100px */
+
+	margin-bottom: -450px;
+   
+    background-color: var(--color-background);
+    box-shadow: var(--box-shadow);
+	transition: all 0.5s ease;
+}
+
+.container-acessorios{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:2000px; /*width: 980px*/
+    height:960px; /* height: 1100px */
+    padding:50px;
+
+	padding-top: 1000px;
+	
+
+    background-color: var(--color-background);
+    box-shadow: var(--box-shadow);
+	transition: all 0.5s ease;
+}
+
+.container-acessorios:hover{
+	box-shadow: var(--box-shadow-hover);
+}
+
+#slide{
+    width:max-content;
+    margin-top:50px;
+}
+.acessorios-item{
+    width:200px;
+    height:300px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    transform: translate(0,-50%);	
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+.acessorios-item:nth-child(1),
+.acessorios-item:nth-child(2){
+    left:0;
+    top:0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width:100%;
+    height:100%;
+    box-shadow: none;
+}
+.acessorios-item:nth-child(3){
+    left:70%;
+}
+.acessorios-item:nth-child(4){
+    left:calc(70% + 220px);
+}
+.acessorios-item:nth-child(5){
+    left:calc(70% + 440px);
+    opacity: 0;
+}
+.acessorios-item .acessorios-content{
+    position: absolute;
+    top:50%;
+    left:100px;
+    width:300px;
+    text-align: left;
+    padding:0;
+    color: var(--color-white);
+    transform: translate(0,-50%);
+    display: none;
+    font-family: system-ui;
+}
+.acessorios-item:nth-child(2) .acessorios-content{
+    display: block;
+    z-index: 11111;
+}
+.acessorios-item .name{
+    font-size: 35px;
+	font-weight: 400;
+    opacity: 0;
+    animation:showcontent 1s ease-in-out 1 forwards;
+
+	cursor: default;
+}
+.acessorios-item .des{
+    margin:50px 0;
+	font-weight: 500;
+    opacity: 0;
+	font-size: 40px;
+    animation:showcontent 1s ease-in-out 0.3s 1 forwards;
+
+	cursor: default;
+}
+.acessorios-item button{
+    padding:10px 20px;
+	font-size: 25px;
+	font-weight: 400;
+	margin-left: -20px;
+    border:none;
+	background-color: transparent;
+	color: var(--color-white);
+    opacity: 0;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: all 0.5s ease-in-out;
+    animation:showcontent 1s ease-in-out 0.6s 1 forwards
+}
+
+.acessorios-item button:hover{
+	color: var(--color-primary);
+	font-weight: 500;
+}
+
+@keyframes showcontent{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter:blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0,0);
+        filter:blur(0);
+    }
+}
+/*---------------------------------------------------------
+	End Acessorios
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+	Footer
+----------------------------------------------------------*/
+footer{
+	margin-top: 100px;
+	font-size: 16px;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+
+	padding-top: 30px;
+	padding-bottom: 50px;
+
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+
+    transition: all 0.5s ease;
+}
+
+.f-logo-content{
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    padding-top: 5px;
+    margin-right: 50px;
+}
+
+
+.f-logo{
+    display: flex;
+    align-items: center;
+}
+
+.f-logo p{
+    font-size: 15px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    padding-inline-start: 15px;
+    cursor: default;
+}
+.f-logo-content img{
+    width: 40px;
+}
+
+.f-logo-content a{
+    text-decoration: none;
+}
+
+.social-media{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+
+    padding-top: 30px;
+    padding-bottom: 35px;
+    margin: 7px;
+    gap: 10px;
+}
+
+.social-media .fmedia{
+    font-size: 25px;
+
+    color: var(--color-black);
+
+    cursor: pointer;
+    transition: all 0.6s ease;
+}  
+
+.payment-methods img{
+    width: 150px;
+    height: 45px;
+}
+
+.footer-mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-content p{
+    font-size: 18px;
+    font-weight: bold;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  
+    opacity: 0.6;
+	cursor: default;
+}
+
+.footer-mapa li{
+    padding: 0 10px;
+    padding-bottom: 15px;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-mapa a{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+    color: var(--color-black);
+    text-decoration: none;
+
+    transition: all 0.7s ease;
+}
+/*--------------------
+	Hover
+--------------------*/
+.footer-content:hover{
+    box-shadow: var(--box-shadow-hover);
+}
+
+.fmedia:hover{
+    font-size: 23px;
+
+    color: var(--color-primary);
+}
+
+.footer-mapa a:hover{
+    letter-spacing: 0px;
+    color: var(--color-primary);
+}
+/*---------------------------------------------------------
+	End Footer
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+	Newsletter
+----------------------------------------------------------*/
+.form{
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 400px;
+}
+
+.form-box input[type="email"]{
+    width: 100%;
+    height: 35px;
+
+    margin-bottom: 17px;
+
+    border: 1px solid var(--color-black);
+
+    cursor: text;
+}
+
+.form-box input[type="checkbox"]{
+    cursor: pointer;
+}
+
+.checkbox label{
+	font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.checkbox label a{
+    text-decoration: none;
+}
+
+.checkbox label u{
+    text-decoration: underline;
+}
+
+.checkbox .active{
+    color: var(--color-primary);  
+}
+
+.checkbox ::placeholder{
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	letter-spacing: 1px;
+
+	color: var(--color-black);
+}
+
+.form-box .btn.btn-primary{
+	width: 100% !important;
+    height: 40px !important;
+   
+    margin-top: 17px !important;
+    margin-bottom: 30px !important;
+
+    color: var(--color-white) !important;
+    background-color: var(--color-black) !important;
+    border: 1px solid var(--color-black) !important;
+
+    transition: all 0.5s ease !important;
+}
+
+/*--------------------
+	Hover
+--------------------*/
+
+.form-box .btn.btn-primary:hover {
+    background-color: var(--color-primary);
+    border: none;
+    transform: scale(0.9);
+}
+/*---------------------------------------------------------
+	End Newsletter
+----------------------------------------------------------*/

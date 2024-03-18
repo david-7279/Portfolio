@@ -1,0 +1,11 @@
+1. Open mysql command with bash shell 
+  | $ mysql -u root -p
+
+2. Create a database (schema):
+  | CREATE DATABASE footswearDB;
+
+3. Create a database user:
+  | CREATE USER fs@localhost identified by 'footswearDW-2023/2024';
+
+4.Grant access to user on database:
+  | GRANT ALL PRIVILEGES ON footswearDB.* to fs@localhost;

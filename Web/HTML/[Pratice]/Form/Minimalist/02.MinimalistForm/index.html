@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Font Awesome | Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Style CSS-->
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Minimalist Form | david-7279</title>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <main>
+
+        <div class="main-content">
+            <div class="title">
+                <p>Any question?</p>
+            </div>
+            <!-- Container | Section -->
+            <div class="container">
+                <!-- Left Section -->
+                <div class="left">
+                    <div class="form-box">
+                        <div class="text-left">
+                            <p>Follow us!</p>
+                        </div>
+                        <div class="icons">
+                            <a href="#">
+                                <i class="fas fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Left Section -->
+
+                <!-- Right Section | Form  -->
+                <div class="right">
+                    <div class="form-box">
+                        <!-- fORM -->
+                        <form action="https://formspree.io/f/xeqbdnlq" method="POST">
+                            <!-- Name -->
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" maxlength="30" required>
+                            <!-- End of Name -->
+
+                            <!-- Email -->
+                            <label for="name">Email</label>
+                            <input type="email" id="email" name="email" maxlength="60" required>
+                            <!-- End of Email -->
+
+                            <!-- Message -->
+                            <label for="name">Message</label>
+                            <textarea id = "comment" rows = "5" cols = "42" maxlength="250"></textarea>
+                            <!-- End of Message -->
+
+                            <!-- Submit -->
+                            <input type="submit" value="Submit">
+                            <!-- End of Submit -->
+                        </form>
+                        <!-- End of fORM -->
+                    </div>
+                </div>
+                <!-- End of Rifht Section | Form -->
+            </div>
+            <!-- End Of Container | Section -->
+        </div>
+    </main>
+    <!-- End Of Main Content -->
+</body>
+</html>

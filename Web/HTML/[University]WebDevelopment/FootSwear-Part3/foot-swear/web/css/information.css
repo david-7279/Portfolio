@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*---------------------------------------------------------
+	Variables
+----------------------------------------------------------*/
+:root{
+    --color-primary: #6C9BCF;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-background: #f6f6f9;
+    --color-line: #848bc82e;
+	  --color-black:#000000;
+    --color-star:#fbc634;
+
+    --card-border-radius: 8px;
+
+    --box-shadow: 0 0.5rem 1rem var(--color-light);
+    --box-shadow-hover: 0 0rem 1.5rem var(--color-light);
+}
+/*---------------------------------------------------------
+	End Variables
+----------------------------------------------------------*/
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: var(--color-background);
+}
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.sections-bg {
+  background-color: var(--color-background);
+}
+
+.section-header {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.section-header h2 {
+  position: relative;
+
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  margin-bottom: 20px !important;
+  padding-bottom: 40px !important;
+
+  transition: all 0.5s ease;
+}
+
+
+
+.section-header h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+
+  width: 50px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 20px !important;
+
+  background: var(--color-primary);
+}
+
+.section-header p {
+  margin-bottom: 0;
+  color: var(--color-info-dark);
+}
+
+/*-------------------------
+  Hover
+-------------------------*/
+.section-header h2:hover {
+  letter-spacing: 0;
+}
+/*--------------------------------------------------------------
+#  Main Content
+--------------------------------------------------------------*/
+.services {
+    padding: 60px 0;
+  }
+  
+  .services .service-item {
+    padding: 40px;
+    height: 100%;
+
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+  }
+  
+  .services .service-item .icon {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    
+    margin-bottom: 50px;
+
+    cursor: default;
+  }
+  
+  .services .service-item .icon span {
+    position: relative;
+
+    font-size: 56px;   
+
+    color: var(--color-primary);
+    
+    z-index: 2;
+    transition: all 0.5s ease;
+    cursor: default;
+  }
+  
+  .services .service-item h3 {
+    position: relative;
+    display: inline-block;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+
+    border-bottom: 4px solid var(--color-white);
+
+    transition: all 0.5s ease;
+    cursor: default;
+  }
+  
+  .services .service-item p {
+    line-height: 24px;
+    font-size: 14px;
+
+    margin-bottom: 0;
+
+    cursor: default;
+  }
+  
+  .services .service-item:hover .icon:before {
+    background: var(--color-primary);
+  }
+  
+  .services .service-item:hover h3 {
+    border-color: var(--color-primary);
+  }
+
+  .service-item .ref-text{
+    color: var(--color-info-dark);
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+  }
+
+  .service-item .ref-text:hover{
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+/*--------------------------------------------------------------
+# End TMain Content
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Icon
+--------------------------------------------------------------*/
+.icon i {
+  font-size: 35px;
+  color: var(--color-black);
+
+  transition: all 0.5s ease;
+}
+
+.services .service-item:hover i {
+    color: var(--color-primary);
+    font-size: 30px;
+}
+
+.services .service-item .icon img {
+  width: 35px;
+  border-radius: var(--card-border-radius);
+
+  transition: all 0.5s ease;
+}
+
+.services .service-item:hover .icon img {
+  width: 30px;
+
+}
+/*--------------------------------------------------------------
+# End Icon
+--------------------------------------------------------------*/

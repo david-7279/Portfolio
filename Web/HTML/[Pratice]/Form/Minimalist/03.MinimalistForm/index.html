@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Minimalist Form | @david-7279.</title>
+</head>
+    <body>
+       
+
+        <!-- Title -->
+        <div class="m-title">
+            <h2> Hello, <!-- Name of the user here! --></h2>
+            <p>Control Panel</p>
+            <hr>
+        </div>
+        <!-- End Title -->
+
+        <!-- Content Card -->
+        <div class="content-card">
+            <!-- Card -->
+                <div class="card">
+                    <a href="#">
+                        <div class="c-icon">
+                            <i class="c-fas fa-solid fa-user"></i>
+                        </div>
+                            <p class="c-title">Login</p> 
+                            <p class="c-text"></p>
+                    </a>
+
+                    <!-- Form Login -->
+                        <form class="c-form-box" action="page.php" method="post">
+                            <input type="email" placeholder="Email" maxlength="120" required>
+                            <input type="password" required placeholder="********" maxlength="30">
+                            <input type="submit" value="Login">
+                            
+                        </form>
+                        <a class="forgot" href="">Forgot password?</a>
+                    <!-- End Form Login -->
+                </div>
+            <!-- End card -->
+
+            <!-- Card -->
+                <div class="card">
+                    <a href="#">
+                        <div class="space"></div>
+                        <div class="c-icon">
+                            <i class="c-fas fa-solid fa-plus"></i>
+                        </div>
+                            <p class="c-title">Create </p> 
+                                <p class="space-create"></p>
+                    </a>
+
+                    <!-- Form Create -->
+                        <form class="c-form-box" action="page.php" method="post">
+                            <input type="text" name="fname" id="fname" placeholder="Name" maxlength="25" required>
+                            <input type="email" placeholder="Email" maxlength="120" required>
+                            <input type="password" required placeholder="********" maxlength="30">
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox" name="checkbox"required>
+                                    <label for="terms">I read and accept the <a href="https://www.google.com/" target="_blank"><u class="active"> Terms</u>.</a></label>
+                            </div>
+                            <input type="submit" value="Create">
+                        </form>   
+                    <!-- End Form Create -->
+                </div>
+            <!-- End Card -->
+        </div>
+        <!-- End Content Card -->
+    </body>
+</html>

@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*---------------------------------------------------------
+	Variables
+----------------------------------------------------------*/
+:root{
+    --color-primary: #6C9BCF;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-background: #f6f6f9;
+    --color-line: #848bc82e;
+	--color-black:#000000;
+    --color-star:#fbc634;
+
+    --card-border-radius: 8px;
+
+    --box-shadow: 0 0.5rem 1rem var(--color-light);
+    --box-shadow-hover: 0 0rem 1.5rem var(--color-light);
+}
+/*---------------------------------------------------------
+	End Variables
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+	Aside
+----------------------------------------------------------*/
+aside{
+    float: left !important;
+    width: 320px !important;
+    height: 1000px !important;
+
+    position: relative !important;
+}
+
+.card{
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 1000px;
+    min-width: 0 !important;
+    height: 250px !important;
+
+    background-color: var(--color-white) !important;
+    
+    border-radius: var(--card-border-radius);
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    box-shadow: var(--box-shadow-hover);
+    transform: scale(0.95);
+    margin-bottom: 70px;
+}
+
+.card .card-body{
+    background-color: var(--color-background) !important;
+}
+
+.card-body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--color-white);
+    
+    box-shadow: var(--box-shadow);
+
+    transition: all 0.5s ease;
+}
+
+.card-body:hover{
+    box-shadow: var(--box-shadow-hover);
+}
+
+.card-body h5{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: var(--color-black);
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.card-body h5:hover{
+    letter-spacing: 0;
+}
+
+.fm-search{
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.fm-search:hover{
+    transform: scale(0.95);
+    margin-bottom: 50px;
+}
+
+.fm-menu{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+ .card .card-body-price{
+    background-color: var(--color-background) !important;
+    background: var(--color-background) !important;
+ }
+.card.card-price{
+    height: 150px !important;
+}
+
+.price-card h2{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: var(--color-black);
+
+    margin-top: 10px;
+    margin-left: -30px;
+    margin-bottom: 17px;
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.price-card p{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    color: var(--color-black);
+
+    margin-bottom: 17px;
+    margin-left: -30px;
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.form-range{
+    margin-left: -30px;
+
+    background: var(--color-background) !important;
+}
+
+.price-card h2:hover{
+    letter-spacing: 0;
+}
+
+.price-card p:hover{
+    color: var(--color-primary);
+    letter-spacing: 0;
+}
+/*--------------------------------
+	Button
+--------------------------------*/
+.fm-menu .btn{
+    color: var(--color-black);
+    display: flex;
+    padding-inline-start: 15px;
+    border: none !important;
+
+    background-color: var(--color-background) !important;
+}
+
+.fm-menu .all {
+    padding-inline-start: 20px !important;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.fm-menu:hover .all{
+    opacity: 1;
+}
+
+.btn:focus{
+    outline: none!important;
+    box-shadow: none!important;
+
+    color: var(--color-primary  ) !important;
+}
+.btn-primary{
+    background-color: var(--color-white) !important;
+    border: none;
+}
+.btn-primary:hover{
+    color: var(--color-primary) !important;
+}
+/*---------------------------------------------------------
+	End Aside
+----------------------------------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{ 
+    background: var(--color-background);
+}
+
+#product-list{
+    border: none !important;
+    outline: none !important;
+    background-color: var(--color-background) !important;
+    justify-content: center;
+
+    border-radius: var(--card-border-radius);
+
+    height: 2600px !important;
+
+    margin-left: 100px;
+    width: 0px !important;
+    transition: all 0.5s ease-in-out;
+}
+
+/*---------------------------------------------------------
+	Title
+----------------------------------------------------------*/
+.product-title{
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    color: var(--color-black);
+
+    margin-bottom: 17px;
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.product-subtitle{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    color: var(--color-black);
+
+    margin-bottom: 17px;
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.product-subtitle span{
+    color: var(--color-primary);
+}
+/*--------------------------------
+	Hover
+--------------------------------*/
+.product-title:hover,
+.product-subtitle:hover,
+.product-subtitle span:hover{
+    letter-spacing: 0;
+}
+/*---------------------------------------------------------
+	End Title
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+	List Item
+----------------------------------------------------------*/
+.stg-card{
+    text-decoration: none;
+}
+.content{
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-background);
+    
+    margin-bottom: 33px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-stg{
+    justify-content: center;
+    align-items: center;
+    
+    border: transparent;
+    overflow: unset;
+
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-background);
+
+    height: 250px !important;
+
+    width: 1000px !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.list-group-item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+
+    margin: 0;
+
+    width: 100%;
+}
+
+.media img{
+    display: flex;
+    float: right;
+    margin-top: -150px;
+    margin-left: 450px;
+
+    transition: all 0.5s ease;
+}
+
+.media h5{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    color: var(--color-black);
+
+    margin-bottom: 17px;
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.media p{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    color: var(--color-info-dark);
+
+    margin-bottom: 17px;
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.media h6{
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    color: var(--color-primary);
+
+    margin-bottom: 17px;
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+/*--------------------------------
+	Hover
+--------------------------------*/
+
+.card-stg:hover{
+    box-shadow: var(--box-shadow-hover);
+}
+.content:hover{
+    transform: scale(0.97);
+}
+
+.media img:hover{
+    transform: scale(0.9);
+}
+
+.media h6:hover,.media p:hover,.media h5:hover{
+    letter-spacing: 0;
+}
+/*---------------------------------------------------------
+	End List Item
+----------------------------------------------------------*/
+
+/*--------------------------------
+	Title Product
+--------------------------------*/
+.p-title{
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    color: var(--color-black);
+    
+    padding-top: 35px;
+    padding-bottom: 3px;
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.p-subtitle{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    color: var(--color-black);
+
+    padding-bottom: 3px;
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.p-price{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    color: var(--color-primary);
+
+    transition: all 0.5s ease;
+    cursor: default;
+}
+/*--------------------------------
+	Hover
+--------------------------------*/
+.p-title:hover,
+.p-subtitle:hover,
+.p-price:hover{
+    letter-spacing: 0;
+}
+/*--------------------------------
+	End Title Product
+--------------------------------*/
+
+/*--------------------------------
+	Star
+--------------------------------*/
+.ratings{
+    padding-top: 3px;
+
+   transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.ratings i{
+    font-size:12px;
+    color:var(--color-background);
+}
+
+.rating-color{
+    color: var(--color-star) !important;
+}
+
+/*--------------------------------
+	Hover
+--------------------------------*/
+.ratings:hover{
+    transform: scale(0.9);
+}
+
+/*--------------------------------
+	End Star
+--------------------------------*/
