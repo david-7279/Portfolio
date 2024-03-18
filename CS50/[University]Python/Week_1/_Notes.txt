@@ -1,0 +1,15 @@
+Conditionals
+> Greater than
+>= Greater equal than
+< Less than
+<= Less equal then
+== Equal to
+!= Not equal to
+
+
+Boolean expression
+A question who has a true or false answer
+Do this or don't do this~
+
+Match
+Is similat to switch
