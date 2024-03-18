@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*---------------------------------------------------------
+	Variables
+----------------------------------------------------------*/
+:root{
+    --color-primary: #6C9BCF;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-background: #f6f6f9;
+    --color-line: #848bc82e;
+	  --color-black:#000000;
+    --color-star:#fbc634;
+
+    --card-border-radius: 8px;
+
+    --box-shadow: 0 0.5rem 1rem var(--color-light);
+    --box-shadow-hover: 0 0rem 1.5rem var(--color-light);
+}
+/*---------------------------------------------------------
+	End Variables
+----------------------------------------------------------*/
+
+.card{
+  display: inline-block;
+
+  max-width: 250px;
+  padding: 20px;
+  margin: 10px;
+  
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.card:hover{
+  box-shadow: var(--box-shadow-hover);  
+}
+
+.card .cardImage{
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .cardTitle{
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card .cardText{
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+}
